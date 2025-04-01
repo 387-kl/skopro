@@ -7,11 +7,9 @@ public class Main {
         int desiredSum = 2_459_000;
         int sum = 0;
         int amount = 15_000;
-        double percent = 1d / 100;
         int month = 0;
         while (sum < desiredSum) {
             sum += amount;
-            sum = (int) (sum * (1 + percent));
             month++;
             System.out.println("Месяц " + month + " ,сумма накопленых равна" + sum + " рублей");
         }
@@ -38,7 +36,7 @@ public class Main {
         }
         /// tesk 4
         System.out.println("tesk 4");
-        percent = 7d / 100;
+        double percent = 7d / 100;
         desiredSum = 12_000_000;
         sum = amount;
         while (sum < desiredSum) {
